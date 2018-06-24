@@ -75,10 +75,11 @@ h1, h2 {
     padding-right: 15px;
 }
 
-header {
+.header {
     position: relative;
-    margin: 20px 0;
+    padding-top: 20px;
     padding-bottom: 20px;
+    background-color: white;
 }
 
 .header::after {
@@ -89,6 +90,16 @@ header {
     height: 2px;
     bottom: 1px;
     left: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .header {
+    padding-top: 40px;
 }
 
 .logo-name {
@@ -155,6 +166,14 @@ header {
     font-size: 50px;
 }
 
+#gallery {
+    padding-bottom: 50px;
+}
+
+.row-space {
+    margin-top: 30px;
+}
+
 .myphoto img {
     width: 320px;
     height: 450px;
@@ -162,3 +181,11 @@ header {
     margin: 50px 10px;
 }
 
+.center-column {
+    text-align: center;
+}
+
+.photos-size img {
+    width: 250px;
+    height: 250px;
+}
